@@ -13,6 +13,14 @@
         "name": "Curtis Lassam",
         "url": "http://curtis.lassam.net"
     },
+    "locales": {
+        "es": {
+            "description": "Tira los dados!",
+        },
+        "it": {
+            "description": "Lancia i dadi!",
+        }
+    },
     "installs_allowed_from": ["*"],
     "default_locale": "en"
 }
