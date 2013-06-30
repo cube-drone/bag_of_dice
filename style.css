@@ -1,0 +1,84 @@
+
+.dice{
+    width: 53px;
+    height: 53px;
+    background-color: white;
+    list-style-type: none;
+    display: block;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 7px;
+    padding: 5px;
+    float: left;
+}
+
+.dice .ui-link:hover{
+    color: #444;
+}
+
+.dice .ui-link, .dice .ui-link:active{
+    color: #222;
+}
+
+.dice_inner{
+    position: relative;
+}
+
+.dice .ui-btn{
+    position: absolute;
+    top: -27px;
+    left: 45px;
+}
+
+.dice .value{ 
+    position: absolute;
+    font-weight: bold;
+    font-size: large;
+}
+
+.dice .type{
+    display: none;
+}
+
+.d2 .value{
+    top: 14px;
+    left: 19px;
+}
+.d4 .value{
+    top: 23px;
+    left: 20px;
+}
+.d6 .value{
+    top: 17px;
+    left: 20px;
+}
+.d8 .value{
+    top: 17px;
+    left: 20px;
+}
+.d10 .value{
+    top: 17px;
+    width: 22px;
+    margin: 0 0 0 14px;
+    text-align: center;
+}
+.d12 .value{
+    top: 17px;
+    width: 22px;
+    margin: 0 0 0 14px;
+    text-align: center;
+}
+.d20 .value{
+    font-size: small !important;
+    text-align: center;
+    top: 18px;
+    width: 15px;
+    margin: 0 0 0 17px;
+}
+.d100 .value{
+    font-size: medium !important;
+    top: 21px;
+    width: 22px;
+    margin: 0 0 0 18px;
+    text-align: center;
+}

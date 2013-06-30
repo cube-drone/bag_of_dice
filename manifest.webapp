@@ -1,0 +1,19 @@
+{
+    "version": "1.0",
+    "name": "Bag of Dice",
+    "description": "Mobile app for rolling dice. Supports 2,4,6,8,10,12,20, and 100-sided die",
+    "launch_path": "/index.html",
+    "icons": {
+        "16": "/dice/d20-16.png",
+        "48": "/dice/d20-48.png",
+        "60": "/dice/d20-60.png",
+        "128": "/dice/d20-128.png"
+    },
+    "developer": {
+        "name": "Curtis Lassam",
+        "url": "http://curtis.lassam.net"
+    },
+    "installs_allowed_from": ["*"],
+    "default_locale": "en"
+}
+

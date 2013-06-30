@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="utf-8">
+    <title>Bag of Dice</title>
+    <script src="libs/jquery-2.0.2.min.js"></script>
+    <script src="libs/angular.min.js"></script>
+    <script src="js/dicebag.js"></script>
+    <script src="libs/jquery.mobile-1.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="libs/jquery.mobile-1.3.1.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-controller="DiceCtrl">
+
+    <ul>
+        <li class='dice d{{die.d}}' ng-repeat="die in dice">
+            <a ng-click="roll($index)">
+            <div class='dice_inner'>
+                <img src='dice/d{{die.d}}.gif' /> 
+                <div class='type'>d{{die.d}}</div> 
+                <div class='value'>{{die.value}}</div>
+                <button ng-click="delete(die)" ng-init="initDie()" type="submit" data-theme="c" data-iconpos="notext" data-icon="delete">Delete</button> 
+            </div>
+            </a>
+        </li>
+    </ul>
+
+    <div data-role="footer" data-fullscreen='true' data-position="fixed" data-inline="false">
+        <div>
+            <button ng-click="roll()" data-icon="forward" data-iconpos="top" type="submit"></button> 
+        </div>
+        
+        <div data-role="navbar">
+            <ul>
+            <li ng-repeat="die in available_dice">
+                <a ng-click="add(die)" type="submit">d{{die.d}}</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html> 
